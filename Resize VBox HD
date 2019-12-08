@@ -1,0 +1,12 @@
+
+From: https://www.jesusamieiro.com/how-to-resize-a-virtual-machines-disk-in-virtualbox/
+
+cd c:\Program Files\Oracle\VirtualBox
+VBoxManage modifyhd "FreeBSD-12.1-RELEASE-amd64.vhd" --resize 20000
+
+
+From: https://www.freebsd.org/doc/handbook/disks-growing.html
+
+Expand File system freebsd
+gpart recover ada0
+dpart resize -i 3 ada0
